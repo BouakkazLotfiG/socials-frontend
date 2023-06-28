@@ -33,7 +33,7 @@ const PostWidget = ({
   const { palette } = useTheme();
   const main = palette.neutral.main;
   const primary = palette.primary.main;
-  const BACKEND_URL = process.env.BACKEND_URL;
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
   const patchLike = async () => {
     const response = await fetch(`${BACKEND_URL}/posts/${postId}/like`, {
