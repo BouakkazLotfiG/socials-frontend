@@ -12,3 +12,4 @@ The Social Media App is a web application built with React, Redux, Express, and 
 - Adding friends feature to expand user networks and foster connections
 - Dark and light mode themes for an enhanced user experience
 
+##Backend repository : https://github.com/BouakkazLotfiG/socials-backend
