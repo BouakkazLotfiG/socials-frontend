@@ -6,6 +6,7 @@ import PostWidget from './PostWidget';
 const PostsWidget = ({ userId, isProfile = false }) => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
+  console.log('🚀 ~ file: PostsWidget.jsx:9 ~ PostsWidget ~ posts:', posts);
   const token = useSelector((state) => state.token);
   const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -24,6 +25,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await response.json();
+
     dispatch(setPosts({ posts: data }));
   };
 
